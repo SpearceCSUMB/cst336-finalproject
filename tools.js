@@ -23,15 +23,22 @@ module.exports = {
     
 //     return conn;
 // },
-createConnection : function(){
-     var conn = mysql.createConnection({
-        host: "us-cdbr-iron-east-02.cleardb.net",
-        user: "b6951b682e3ba4",
-    password: "99c2847e",
-    database: "heroku_c95e9e22677104d"
-  })
-     return conn;
-  }, // createConnection
+createConnection: function() {
+
+   var conn = mySql.createConnection({
+    host: "us-cdbr-iron-east-02.cleardb.net",
+    user: "bfc4587d6ac1fc",
+    password: "0aba13ee",
+    database: "heroku_ac67da2a0817b59"
+   })
+//     var conn = mysql.createConnection({
+//         host:"localhost", 
+//         user: "root", 
+//         password:"", 
+//         database: "team_final"});
+    
+    return conn;
+},
 //    create session variable
   findSession: function(conn){
     return new Promise( function(resolve,reject) {
