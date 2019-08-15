@@ -25,7 +25,7 @@ module.exports = {
 // },
 createConnection: function() {
 
-   var conn = mySql.createConnection({
+   var conn = mysql.createConnection({
     host: "us-cdbr-iron-east-02.cleardb.net",
     user: "bfc4587d6ac1fc",
     password: "0aba13ee",
