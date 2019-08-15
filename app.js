@@ -70,7 +70,7 @@ app.get("/airplaneSearch", async function(req, res){
 }); // airplaneSearch route
 
 app.get("/search", async function(req, res){
-
+  console.log("In /Search")
   let make = req.query.make;
   let engine = req.query.engine;
   let priceStart = req.query.priceStart;
@@ -78,10 +78,12 @@ app.get("/search", async function(req, res){
   let hoursStart = req.query.hoursStart;
   let hoursEnd = req.query.hoursEnd;
   
-
+  console.log("Creating connection");
   let sql = "";
   let conn = tools.createConnection();
   var sId = await tools.findSession(conn);
+  
+  console.log("Created connection");
 //   conn.connect(function(err) {
 //     if(err) throw(err);
 
