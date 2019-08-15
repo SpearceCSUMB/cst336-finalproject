@@ -3,16 +3,17 @@ const mysql = require('mysql');
 
 module.exports = {
 
-//  createConnection: function() {
+ createConnection: function() {
 
-//     var conn = mysql.createConnection({
-//         host:"cst336.ddns.net", 
-//         user: "cst2", 
-//         password:"3UaIr2cyEPJD81u", 
-//         database: "team_final"});
+    var conn = mysql.createConnection({
+        host:"cst336.ddns.net", 
+        user: "cst2", 
+        password:"3UaIr2cyEPJD81u", 
+        database: "team_final"});
     
-//     return conn;
-// }
+    return conn;
+ },
+
 // createConnection: function() {
 
 //     var conn = mysql.createConnection({
@@ -23,22 +24,22 @@ module.exports = {
     
 //     return conn;
 // },
-createConnection: function() {
+// createConnection: function() {
 
-   var conn = mysql.createConnection({
-    host: "us-cdbr-iron-east-02.cleardb.net",
-    user: "bfc4587d6ac1fc",
-    password: "0aba13ee",
-    database: "heroku_ac67da2a0817b59"
-   })
-//     var conn = mysql.createConnection({
+//    var conn = mysql.createConnection({
+//     host: "us-cdbr-iron-east-02.cleardb.net",
+//     user: "bfc4587d6ac1fc",
+//     password: "0aba13ee",
+//     database: "heroku_ac67da2a0817b59"
+//    })
+// //     var conn = mysql.createConnection({
 //         host:"localhost", 
 //         user: "root", 
 //         password:"", 
 //         database: "team_final"});
     
-    return conn;
-},
+//     return conn;
+// },
 //    create session variable
   findSession: function(conn){
     return new Promise( function(resolve,reject) {
