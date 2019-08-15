@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/sheridanb2008/cst336-finalproject/issues"
   },
-  "homepage": "https://github.com/sheridanb2008/cst336-finalproject#readme"
+  "homepage": "https://github.com/sheridanb2008/cst336-finalproject#readme",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "express-session": "^1.16.2",
+    "mysql": "^2.17.1"
+  }
 }
