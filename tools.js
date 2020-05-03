@@ -3,17 +3,26 @@ const mysql = require('mysql');
 
 module.exports = {
 
- createConnection: function() {
+//  createConnection: function() {
 
-    var conn = mysql.createConnection({
-        host:"cst336.ddns.net", 
-        user: "cst2", 
-        password:"3UaIr2cyEPJD81u", 
-        database: "team_final"});
+//     var conn = mysql.createConnection({
+//         host:"cst336.ddns.net", 
+//         user: "cst2", 
+//         password:"3UaIr2cyEPJD81u", 
+//         database: "team_final"});
     
-    return conn;
- },
+//     return conn;
+//  },
 
+  createConnection: function() {
+        var conn = mysql.createConnection({
+            host: "35.222.88.211",
+            user: "root",
+            password: "csumb2020",
+            database: "team_final"
+        })
+        return conn;
+    },
 // createConnection: function() {
 
 //     var conn = mysql.createConnection({
