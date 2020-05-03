@@ -14,6 +14,7 @@ module.exports = {
 //     return conn;
 //  },
 
+  // Updated SQL Database Connection
   createConnection: function() {
         var conn = mysql.createConnection({
             host: "35.222.88.211",
